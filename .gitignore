@@ -1,0 +1,34 @@
+#  Node dependencies (don't push)
+**/node_modules/
+
+#  Environment secrets (NEVER push)
+**/.env
+.env
+
+#  Logs & debug
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+#  OS junk
+.DS_Store
+Thumbs.db
+
+#  Editor configs
+.vscode/
+.idea/
+
+#  Temp folders
+dist/
+build/
+tmp/
+temp/
+
+# Coverage reports (testing, if used)
+coverage/
+
+#  Docker context junk (but keep Dockerfile tracked)
+!**/Dockerfile
+!**/.dockerignore
