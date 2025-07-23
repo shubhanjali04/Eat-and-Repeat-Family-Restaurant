@@ -103,7 +103,7 @@ Import the endpoints and test each service.
 ### 📋 Menu Service
 
 ![Menu Fetch](screenshots/GetMenuItem.png)  
-*View all menu items*
+*View all menu items using menuItemId*
 
 ![Menu Add](screenshots/MenuItemAdd.png)  
 *Add a new menu item*
