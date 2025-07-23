@@ -1,0 +1,86 @@
+version: '3.8'
+
+services:
+ api-gateway:
+  build:
+   context: ./api-gateway
+  ports:
+   - "8080:8080" 
+  environment:
+    - PORT=8080
+    - USER_SERVICE_URL=http://user-service:8000
+    - MENU_SERVICE_URL=http://menu-service:8001
+    - CART_SERVICE_URL=http://cart-service:8002
+    - ORDER_SERVICE_URL=http://order-service:8004
+    - AUTH_SERVICE_URL=http://auth-service:8003
+    - PAYMENT_SERVICE_URL=http://payment-service:8005 
+  depends_on:
+   - user-service
+   - menu-service
+   - cart-service
+   - order-service
+   - auth-service
+   - payment-service
+  restart: always   
+
+
+  
+ user-service:
+  build:
+   context: ./Backend/user-service
+  ports:
+   - "8000:8000"
+  restart: always 
+
+ menu-service:
+  build:
+   context: ./Backend/menu-service
+  ports:
+   - "8001:8001"
+  restart: always
+
+ cart-service:
+  build:
+   context: ./Backend/cart-service
+  ports:
+   - "8002:8002"
+  depends_on:
+   - menu-service
+  restart: always
+
+ auth-service:
+  build:
+   context: ./Backend/auth-service
+  ports:
+   - "8003:8003"
+  depends_on:
+   - user-service
+  restart: always   
+
+ order-service:   
+  build:
+   context: ./Backend/order-service
+  ports:
+   - "8004:8004"
+  depends_on:
+   - menu-service
+   - cart-service
+  restart: always  
+
+ payment-service:
+  build:
+   context: ./Backend/payment-service
+  ports:
+   - "8005:8005"
+  depends_on:
+   - order-service
+  restart: always   
+
+ delivery-service:
+  build:
+   context: ./Backend/delivery-service
+  ports:
+   - "8006:8006"  
+  depends_on:
+   - order-service
+  restart: always  
