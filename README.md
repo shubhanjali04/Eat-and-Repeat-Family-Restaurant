@@ -84,6 +84,63 @@ Import the endpoints and test each service.
  Features: login, menu browsing, cart, order, payment & delivery tracking
 
 
+
+ #### API Testing Screenshots(Thunder Client)
+
+ ### 📦 Auth Service
+
+![Auth Register](screenshots/AuthRegister.png)  
+*Register API tested via Thunder Client*
+
+![Auth Login](screenshots/AuthLogin.png)  
+*Login API tested via Thunder Client*
+
+![Auth Logout](screenshots/AuthLogout.png)  
+*Logout API tested via Thunder Client*
+
+---
+
+### 📋 Menu Service
+
+![Menu Fetch](screenshots/GetMenuItem.png)  
+*View all menu items*
+
+![Menu Add](screenshots/MenuItemAdd.png)  
+*Add a new menu item*
+
+---
+
+### 🛒 Cart Service
+
+![Cart Add](screenshots/cartAdd.png)  
+*Add item to cart*
+
+---
+
+### 🧾 Order Service
+
+![Order Place](screenshots/OrderPlace.png)  
+*Place order API*
+
+---
+
+### 💳 Payment Service
+
+![Payment](screenshots/payment1.png)  
+*Payment gateway simulation*
+
+![Payment Verify](screenshots/Paymentverify.png)  
+*Verify payment transaction*
+
+---
+
+### 🚚 Delivery Service
+
+![Delivery Status](screenshots/deliveryAssign.png)  
+*Assign/Track delivery status*
+
+
+
  ### 🙌 Acknowledgement
 
 I would like to express my sincere gratitude to **Celebal Technologies** for providing me the opportunity to work on this project as part of my internship. This experience has been a valuable milestone in my learning journey, offering deep insights into real-world software development practices.
