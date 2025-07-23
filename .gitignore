@@ -4,6 +4,8 @@
 #  Environment secrets (NEVER push)
 **/.env
 .env
+backend/auth-service/firebase/*.json
+
 
 #  Logs & debug
 *.log
