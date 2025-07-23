@@ -74,14 +74,30 @@ All services will run on their assigned ports, accessible via the API Gateway.
 4. Test APIs via Thunder Client or Postman
 Import the endpoints and test each service.
 
-## 🎨 Frontend (Coming Soon)
- The frontend will be developed using:
+## 🔧 Upcoming Enhancements
 
- React.js + Tailwind CSS
+The following features and services are planned as part of future development to enhance the overall functionality and user experience of the **Eat and Repeat Family Restaurant** app:
 
- Axios to consume API Gateway routes
+- 🤖 **AI Integration**  
+  Smart recommendations based on user preferences and order history.
 
- Features: login, menu browsing, cart, order, payment & delivery tracking
+- 🌟 **Review & Rating Service**  
+  Allow users to rate dishes and share feedback after ordering.
+
+- 🗣️ **Feedback Service**  
+  Collect structured feedback to improve food quality and service.
+
+- 🛠️ **Admin Service**  
+  Admin panel for managing users, orders, menu items, and analytics.
+
+- 🔔 **Notification Service**  
+  Real-time updates via email/SMS/push for order confirmation, dispatch, and delivery.
+
+- 💻 **Frontend UI** (Planned)  
+  A modern, responsive frontend using **React** to consume the backend APIs through the API Gateway.
+
+
+
 
 
 
