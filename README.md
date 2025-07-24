@@ -109,8 +109,11 @@ Service	Endpoint Example
 - Auth Service	POST /api/auth/logout
 - User Service	GET /api/user/
 - Menu Service	GET /api/menu/
+- Menu Service	POST /api/menu/ (POST for adding item)
 - Cart Service	POST /api/cart/add
-- Order Service	GET /api/order/user/:id
+- Order Service	PUT /api/order/cancel/:orderId
+- Order Service	POST /api/order/placeorder
+- Order Service	PUT /api/order/updatestatus/:orderId
 - Payment Service	POST /api/payments/createorder
 - Payment Service POST /api/payments/verifypayment
 - Delivery Service PUT /api/delivery/complete/:id
