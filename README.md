@@ -83,21 +83,27 @@ Make sure the following are installed:
 
 ### 📦 Step-by-Step Guide
 
-1. **Clone the Repository**
-
-```bash
+### Bash Commands to run the project
+# 1️⃣ Clone the repository
 git clone https://github.com/shubhanjali04/Eat-and-Repeat-Family-Restaurant.git
-cd Eat-and-Repeat-Family-Restaurant
-```
-### Add .env Files
 
-Each microservice inside /backend/ contains a .env.example.
-Copy it to .env in the same folder:
-```
-cd backend/auth-service/
-cp .env.example .env
-```
-# Repeat for each service:
+# 2️⃣ Move into the project directory
+cd Eat-and-Repeat-Family-Restaurant
+
+# 3️⃣ Create .env files for each service from example files
+cp backend/auth-service/.env.example backend/auth-service/.env
+cp backend/user-service/.env.example backend/user-service/.env
+cp backend/menu-service/.env.example backend/menu-service/.env
+cp backend/cart-service/.env.example backend/cart-service/.env
+cp backend/order-service/.env.example backend/order-service/.env
+cp backend/payment-service/.env.example backend/payment-service/.env
+cp backend/delivery-service/.env.example backend/delivery-service/.env
+
+# 4️⃣ Start all services using Docker Compose
+docker-compose up --build
+
+
+ Repeat for each service:
  user-service, menu-service, cart-service, order-service, payment-service, delivery-service
 
  🔐 MongoDB Atlas URLs are already set in the example files.
