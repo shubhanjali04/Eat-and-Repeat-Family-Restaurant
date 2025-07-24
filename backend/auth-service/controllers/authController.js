@@ -25,15 +25,19 @@ export const registerUser = async (req,res) => {
             email,
             password:hashedPassword,
         })
+
+        console.log("User saved in auth-db:", newUser)
+
+        // Send user data to user-service
         try {
-            await
-             axios.post('http://user-service:8000/create',{
+            const response = await
+             axios.post(`${process.env.USER_SERVICE_URL}/create`,{
             name,
             email,
              })
              console.log("User added to user_db:",response.data)
          }catch (error) {
-            console.error("Error saving to user-service:", error)
+            console.error("Error saving to user-service:",error.response?.data || error.message)
         }
         
         
