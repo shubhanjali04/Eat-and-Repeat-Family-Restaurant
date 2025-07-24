@@ -80,8 +80,10 @@ cd Eat-and-Repeat-Family-Restaurant
 
 Each microservice inside /backend/ contains a .env.example.
 Copy it to .env in the same folder:
+```
 cd backend/auth-service/
 cp .env.example .env
+```
 # Repeat for each service:
  user-service, menu-service, cart-service, order-service, payment-service, delivery-service
 
