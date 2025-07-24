@@ -8,6 +8,19 @@ A microservices-based restaurant management system for a seamless digital dining
 
 ---
 
+## 🛠️ Tech Stack
+
+This project is built using the **MERN Stack** and follows a **Microservices Architecture**.
+
+- **MongoDB** – NoSQL database for each microservice (hosted on MongoDB Atlas)
+- **Express.js** – Lightweight web framework for building APIs
+- **React.js** – Frontend (planned)
+- **Node.js** – Runtime environment to run backend services
+- **Docker** – Containerized microservices for easy deployment
+- **Docker Compose** – To run all services together in an isolated environment
+- **API Gateway** – Central entry point to route requests to different services
+
+
 ## ⚙️ Backend Microservices
 
 | Service           | Description                                       | Folder Path                      |
