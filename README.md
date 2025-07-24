@@ -105,12 +105,17 @@ http://localhost:8080
 ```
 Service	Endpoint Example
 - Auth Service	POST /api/auth/register
+- Auth Service	POST /api/auth/login
+- Auth Service	POST /api/auth/logout
 - User Service	GET /api/user/
 - Menu Service	GET /api/menu/
 - Cart Service	POST /api/cart/add
 - Order Service	GET /api/order/user/:id
-- Payment Service	POST /api/payment/initiate
-- Delivery Service	GET /api/delivery/status/:orderId
+- Payment Service	POST /api/payments/createorder
+- Payment Service POST /api/payments/verifypayment
+- Delivery Service PUT /api/delivery/complete/:id
+- Delivery Service	GET /api/delivery/status/all
+- Delivery Service	POST /api/delivery/assign
 
 ⚠️ Make sure routes are correctly mapped in API Gateway using axios or any proxy middleware.
 
