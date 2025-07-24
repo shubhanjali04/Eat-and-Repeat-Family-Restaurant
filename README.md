@@ -42,13 +42,13 @@ docker-compose up --build
 The API Gateway handles all routing logic using http-proxy-middleware.
 
 Incoming Route	Redirected to
-/api/auth/...	Auth Service
-/api/user/...	User Service
-/api/menu/...	Menu Service
-/api/cart/...	Cart Service
-/api/order/...	Order Service
-/api/payment/...	Payment Service
-/api/delivery/...	Delivery Service
+- /api/auth/...	Auth Service
+- /api/user/...	User Service
+- /api/menu/...	Menu Service
+- /api/cart/...	Cart Service
+- /api/order/...	Order Service
+- /api/payment/...	Payment Service
+- /api/delivery/...	Delivery Service
 
 All frontend-to-backend communication passes through the gateway.
 
