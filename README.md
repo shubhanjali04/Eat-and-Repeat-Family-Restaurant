@@ -83,6 +83,7 @@ Make sure the following are installed:
 
 ### 📦 Step-by-Step Guide
 
+```
 ### Bash Commands to run the project
 # 1️⃣ Clone the repository
 git clone https://github.com/shubhanjali04/Eat-and-Repeat-Family-Restaurant.git
@@ -101,8 +102,7 @@ cp backend/delivery-service/.env.example backend/delivery-service/.env
 
 # 4️⃣ Start all services using Docker Compose
 docker-compose up --build
-
-
+```
  Repeat for each service:
  user-service, menu-service, cart-service, order-service, payment-service, delivery-service
 
