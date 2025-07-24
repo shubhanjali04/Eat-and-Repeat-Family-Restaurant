@@ -56,23 +56,63 @@ All frontend-to-backend communication passes through the gateway.
 
 
 
-## 🚀 Setup Instructions
-1. Clone the Repository
-bash
-Copy code
+### 🚀 Setup Instructions
+## ✅ Prerequisites
+
+Make sure the following are installed:
+
+- [Docker](https://www.docker.com/)
+- [Git](https://git-scm.com/)
+
+> 💡 MongoDB Atlas is used — no local MongoDB setup needed.
+
+---
+
+### 📦 Step-by-Step Guide
+
+1. **Clone the Repository**
+
+```bash
 git clone https://github.com/shubhanjali04/Eat-and-Repeat-Family-Restaurant.git
 cd Eat-and-Repeat-Family-Restaurant
-2. Setup Environment Files
-Create .env files in each service directory with required environment variables. (Do not commit secrets like Firebase credentials.)
+```
+### Add .env Files
 
-3. Start Services with Docker Compose
-bash
-Copy code
+Each microservice inside /backend/ contains a .env.example.
+Copy it to .env in the same folder:
+cd backend/auth-service/
+cp .env.example .env
+# Repeat for each service:
+ user-service, menu-service, cart-service, order-service, payment-service, delivery-service
+
+ 🔐 MongoDB Atlas URLs are already set in the example files.
+
+Start All Services Using Docker Compose
+
+```bash
 docker-compose up --build
-All services will run on their assigned ports, accessible via the API Gateway.
+```
+This will build and run all microservices along with the API Gateway.
 
-4. Test APIs via Thunder Client or Postman
-Import the endpoints and test each service.
+### ✅ Check Services (via API Gateway)
+Use Postman or Thunder Client to test services.
+All requests should go through API Gateway on:
+
+```
+http://localhost:8080
+```
+Service	Endpoint Example
+- Auth Service	POST /api/auth/register
+- User Service	GET /api/user/
+- Menu Service	GET /api/menu/
+- Cart Service	POST /api/cart/add
+- Order Service	GET /api/order/user/:id
+- Payment Service	POST /api/payment/initiate
+- Delivery Service	GET /api/delivery/status/:orderId
+
+⚠️ Make sure routes are correctly mapped in API Gateway using axios or any proxy middleware.
+
+
 
 ## 🔧 Upcoming Enhancements
 
