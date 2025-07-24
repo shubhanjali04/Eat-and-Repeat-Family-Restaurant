@@ -47,7 +47,7 @@ Incoming Route	Redirected to
 - /api/menu/...	Menu Service
 - /api/cart/...	Cart Service
 - /api/order/...	Order Service
-- /api/payment/...	Payment Service
+- /api/payments/...	Payment Service
 - /api/delivery/...	Delivery Service
 
 All frontend-to-backend communication passes through the gateway.
