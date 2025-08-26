@@ -230,9 +230,6 @@ The following features and services are planned as part of future development to
 
 I would like to express my sincere gratitude to **Celebal Technologies** for providing me the opportunity to work on this project as part of my internship. This experience has been a valuable milestone in my learning journey, offering deep insights into real-world software development practices.
 
-I am especially thankful to my mentor, **Mr. Ayush Rathore sir**, for his constant guidance, encouragement, and constructive feedback throughout the project. His support and mentorship were instrumental in the successful completion of this project. Also, A special thanks to him for giving me the idea and motivation to build something this impactful and scalable.
-
-I also extend my appreciation to all team members and peers who supported me directly or indirectly during this internship.
 
 Through this project, I gained practical experience in:
 - Building backend microservices using **Node.js** and **Express.js**  
